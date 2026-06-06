@@ -1,138 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Evolve Dance and Fitness | Molalla, OR</title>
-<style>
-  :root {
-    --primary: #2c3e50;
-    --accent: #e74c3c;
-    --light: #f9f9f9;
-  }
-  body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    line-height: 1.6;
-  }
-  header {
-    background-color: var(--primary);
-    color: white;
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-  header h1 {
-    margin: 0;
-    font-size: 3rem;
-    letter-spacing: 1px;
-  }
-  header p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin-top: 10px;
-    opacity: 0.9;
-  }
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-  }
-  .intro {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 3rem auto;
-  }
-  h2 {
-    color: var(--primary);
-    border-bottom: 3px solid var(--accent);
-    display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 1.5rem;
-  }
-  .grid {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  .card {
-    flex: 1;
-    min-width: 300px;
-    background: var(--light);
-    padding: 2rem;
-    border-radius: 8px;
-    border-top: 4px solid var(--accent);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  }
-  .cta-section {
-    text-align: center;
-    background: var(--light);
-    padding: 4rem 2rem;
-    margin-top: 3rem;
-  }
-  .cta-btn {
-    display: inline-block;
-    background: var(--accent);
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-top: 1.5rem;
-    transition: background 0.2s;
-  }
-  .cta-btn:hover {
-    background: #c0392b;
-  }
-  footer {
-    background: #1a252f;
-    color: #888;
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.9rem;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolve Dance and Fitness | Molalla, OR</title>
+  <meta name="description" content="Evolve Dance and Fitness in Molalla, Oregon offers premium dance instruction, fitness classes, and a 1,000+ sq-ft custom sprung Marley dance floor. Join our supportive community today!">
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent: #e74c3c;
+      --light: #f9f9f9;
+      --text: #333;
+    }
+    
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--text);
+      line-height: 1.6;
+      background-color: #ffffff;
+    }
+    
+    header {
+      background-color: var(--primary);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    
+    .logo-img {
+      max-width: 358px;
+      width: 100%;
+      height: auto;
+      margin: -2rem 0;
+    }
+    
+    header p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-top: 0;
+      opacity: 0.9;
+      letter-spacing: 0.5px;
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+    
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 4rem auto;
+    }
+    
+    h2 {
+      color: var(--primary);
+      border-bottom: 3px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 1.5rem;
+      font-size: 2.2rem;
+    }
+    
+    h3 {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .card {
+      background: var(--light);
+      padding: 2.5rem;
+      border-radius: 8px;
+      border-top: 4px solid var(--accent);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .cta-section {
+      text-align: center;
+      background: var(--light);
+      padding: 5rem 2rem;
+      border-top: 1px solid #eaeaea;
+    }
+    
+    .cta-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    
+    .cta-btn:hover {
+      background: #c0392b;
+      transform: scale(1.02);
+    }
+    
+    footer {
+      background: #1a252f;
+      color: #888;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-<p style="text-align: center;"><img src="https://dancewithevolve.com/evolve_logo.png" alt="Evolve Logo" width="358" height="358" /></p>
-<p>Molalla's Premier Dance &amp; Fitness Studio</p>
-</header>
-<div class="container">
-<div class="intro">
-<h2>Welcome to Evolve</h2>
-<p>Opening in 2026, Evolve Dance and Fitness is dedicated to providing high-quality instruction in a supportive, high-energy environment. Led by President and Lead Instructor <strong>Kate Gefael</strong>, our classes are designed to build technique, confidence, and a lifelong love of movement.</p>
-</div>
-<div class="grid">
-<div class="card">
-<h3>Our Team</h3>
-<p>Kate Gefael - President of Evolve, and long time dance mom, instructor, .</p>
-<p>Josh Kayser - Brings a weath of operational expertise and a deep commitment to the community in his role as Vice President. While he calls Oregon City home - where he serves as Chair of the Citizen Involvement Committee - Josh has been a dedicated fixture in Molalla for nearly 30 years through his volunteer work with the Molalla Buckeroo. Drawing on his extensive career as an Operations Manager for North Coast Electric, he ensures the day-to-day business runs seamlessly. A proud father of a 21-year-old daughter, Josh is a passionate advocate for youth. He consistently shows up to empower kids, ensuring they have the support and resources they need to succeed in whatever they do.</p>
-</div>
-<div class="card">
-<h3>Our Story</h3>
-<p>Kate has taught with several other studios in the past and has had a dream to have her own studio where she can provide her special care and compassion for children and dance. As her position was ending at one studio, Kate met up with Josh to discuss her possible opportuntities for opening up a new studio. As long time friends, Kate and Josh rely on each other for advice and reasoning. A few days later, Josh considered Kate's passion and knowledge for Dance and asked her if she wanted to have a real, true partner in the business. Kate almost jumped at the opportunity, and soon after, Evolve Dance and Fitness was born. To her husband's dismay, the pair plan to open the studio in Molalla, Oregon instead of Brightwood, Oregon as he would have liked, but he is very supportive of the efforts to get Evolve up and running.</p>
-</div>
-<div class="card">
-<h3>Premium Facility</h3>
-<p>Dance safely on our custom-engineered, 1,000+ square-foot professional sprung dance floor. Featuring a specialized puck system and a premium Marley surface, the studio is built to prevent injuries and elevate performance.</p>
-</div>
-<div class="card">
-<h3>Expert Instruction</h3>
-<p>Under Kate's direction, our programming blends rigorous technical training with an accessible, empowering atmosphere for the entire community.</p>
-</div>
-</div>
-</div>
-<div class="cta-section">
-<h2>Join the Movement</h2>
-<p>Once Registration and class schedules are set, they will be handled securely through our Jackrabbit Dance portal. Until we get that in place, please feel free to Contact Us below to add to our mailing list, or request further information!</p>
-<a class="cta-btn" href="https://forms.office.com/r/qjpVWAAFQA">Contact Us</a></div>
-<footer>
-<p>&copy; 2026 Evolve Dance and Fitness, LLC. Molalla, Oregon.</p>
-</footer>
+  <header>
+    <img class="logo-img" src="https://dancewithevolve.com/evolve_logo.png" alt="Evolve Dance and Fitness Logo" />
+    <p>Molalla's Premier Dance &amp; Fitness Studio</p>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Welcome to Evolve</h2>
+      <p>Opening in 2026, Evolve Dance and Fitness is dedicated to providing high-quality instruction in a supportive, high-energy environment. Led by President and Lead Instructor <strong>Kate Gefael</strong>, our classes are designed to build technique, confidence, and a lifelong love of movement.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Our Team</h3>
+        <p><strong>Kate Gefael</strong> – President. A long-time dance mom and passionate instructor, Kate brings her special care, compassion, and extensive experience to every class to ensure every student thrives.</p>
+        <p><strong>Josh Kayser</strong> – Vice President. Bringing a wealth of operational expertise and a deep commitment to the community, Josh ensures the day-to-day business runs seamlessly. While he calls Oregon City home—where he serves as Chair of the Citizen Involvement Committee—Josh has been a dedicated fixture in Molalla for nearly 30 years through his volunteer work with the Molalla Buckeroo. Drawing on his career as an Operations Manager, he is a passionate advocate for youth, consistently showing up to empower kids and provide the resources they need to succeed.</p>
+      </article>
+
+      <article class="card">
+        <h3>Our Story</h3>
+        <p>Evolve Dance and Fitness was born from a shared vision between long-time friends Kate and Josh. After teaching at several other studios, Kate dreamed of opening a space where she could fully realize her compassionate approach to dance instruction. Recognizing her undeniable passion and industry knowledge, Josh proposed a true partnership to bring her vision to life. By combining Kate's instructional talent with Josh's operational background, Evolve was established to serve the Molalla community with excellence.</p>
+      </article>
+
+      <article class="card">
+        <h3>Premium Facility</h3>
+        <p>Dance safely on our custom-engineered, 1,000+ square-foot professional sprung dance floor. Featuring a specialized pool-noodle puck system and a premium Marley surface, the studio is built to prevent injuries and elevate performance.</p>
+      </article>
+
+      <article class="card">
+        <h3>Expert Instruction</h3>
+        <p>Under Kate's direction, our programming blends rigorous technical training with an accessible, empowering atmosphere for the entire community.</p>
+      </article>
+    </section>
+  </main>
+
+  <section class="cta-section">
+    <h2>Join the Movement</h2>
+    <p>Registration and class schedules will soon be handled securely through our Jackrabbit Dance portal. In the meantime, please contact us to join our mailing list or request further information!</p>
+    <a class="cta-btn" href="https://forms.office.com/r/qjpVWAAFQA">Contact Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Evolve Dance and Fitness, LLC. Molalla, Oregon.</p>
+  </footer>
+
 </body>
 </html>
-
