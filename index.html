@@ -148,9 +148,56 @@
     footer {
       background: #1a252f;
       color: #888;
-      text-align: center;
-      padding: 2rem;
+      padding: 4rem 2rem 2rem 2rem;
       font-size: 0.95rem;
+    }
+
+    .footer-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .footer-info, .footer-social {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .footer-social {
+      text-align: right;
+    }
+
+    @media (max-width: 600px) {
+      .footer-social {
+        text-align: left;
+      }
+    }
+
+    .footer-info h3, .footer-social h3 {
+      color: white;
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 1rem;
+    }
+
+    .footer-info a, .footer-social a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-info a:hover, .footer-social a:hover {
+      color: white;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #2c3e50;
     }
   </style>
 </head>
@@ -164,6 +211,9 @@
     <section class="intro">
       <h2>Welcome to Evolve</h2>
       <p>Opening in 2026, Evolve Dance and Fitness is on a mission to make dance and fitness accessible to local youth. Led by President and Lead Instructor <strong>Kate Gefael</strong>, our program is designed to build confidence, strong character, and lifelong wellness in a safe, uplifting, and highly structured environment.</p>
+      
+      <!-- NEW HERO CTA BUTTON -->
+      <a class="cta-btn" href="https://forms.office.com/r/qjpVWAAFQA">Join Our Waitlist</a>
     </section>
 
     <!-- Top Features: 2 Cards Wide -->
@@ -245,11 +295,31 @@
   <section class="cta-section">
     <h2>Join the Movement</h2>
     <p>Registration and class schedules will soon be handled securely through our Jackrabbit Dance portal. In the meantime, please contact us to join our mailing list and be the first to know when the schedule drops!</p>
-    <a class="cta-btn" href="https://forms.office.com/r/qjpVWAAFQA">Contact Us</a>
+    <a class="cta-btn" href="https://forms.office.com/r/qjpVWAAFQA">Join Our Waitlist</a>
   </section>
 
+  <!-- UPDATED FOOTER -->
   <footer>
-    <p>&copy; 2026 Evolve Dance and Fitness, LLC. Molalla, Oregon.</p>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Contact Us</h3>
+        <p style="margin: 0.5rem 0;"><strong>Kate Gefael:</strong> <a href="mailto:Kate@dancewithevolve.com">Kate@dancewithevolve.com</a></p>
+        <p style="margin: 0.5rem 0;"><strong>Josh Kayser:</strong> <a href="mailto:Josh@dancewithevolve.com">Josh@dancewithevolve.com</a></p>
+        <p style="margin: 0.5rem 0;"><strong>General Inquiries:</strong> <a href="mailto:info@dancewithevolve.com">info@dancewithevolve.com</a></p>
+      </div>
+      
+      <div class="footer-social">
+        <h3>Follow Our Journey</h3>
+        <p style="margin: 0.5rem 0;">
+          <a href="#" target="_blank">Facebook</a> &nbsp;|&nbsp; 
+          <a href="#" target="_blank">Instagram</a>
+        </p>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2026 Evolve Dance and Fitness, LLC. Molalla, Oregon.</p>
+    </div>
   </footer>
 
 </body>
