@@ -8,6 +8,7 @@ Changed page files:
 - parents.html
 - about.html
 - contact.html
+- registration.html
 - style.css
 
 Expected existing assets in the same root folder:
