@@ -1,329 +1,302 @@
-/* Evolve Dance and Fitness - Phase 1 website refresh */
+/* Evolve Dance and Fitness - branded website refresh */
 :root {
   --primary: #2c3e50;
   --accent: #e74c3c;
   --accent-dark: #c0392b;
+  --gold: #f8d9c4;
+  --rose: #fff6f3;
   --light: #f9f9f9;
-  --soft: #fff7f5;
   --text: #333333;
   --muted: #666666;
-  --dark: #111820;
+  --dark: #080808;
   --footer: #1a252f;
   --border: #e8e8e8;
-  --shadow: 0 6px 18px rgba(0,0,0,0.08);
+  --shadow: 0 8px 22px rgba(0,0,0,.08);
 }
-
 * { box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
-
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   color: var(--text);
   line-height: 1.65;
   background: #ffffff;
 }
-
 a { color: var(--accent); }
-
 a:hover { color: var(--accent-dark); }
-
 .navbar {
-  background: #000000;
-  color: white;
+  background: #000;
+  color: #fff;
   position: sticky;
   top: 0;
   z-index: 1000;
   border-bottom: 3px solid var(--accent);
 }
-
 .nav-container {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0.85rem 1.5rem;
+  padding: .55rem 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
-
-.logo {
-  color: white;
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  color: #fff;
   text-decoration: none;
-  font-size: 1.4rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
-  white-space: nowrap;
+  letter-spacing: .04em;
+  min-width: 220px;
 }
-
+.nav-logo {
+  height: 46px;
+  width: auto;
+  display: block;
+}
+.brand-text { white-space: nowrap; }
 .nav-menu {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  gap: 1rem 1.35rem;
+  flex-wrap: wrap;
+  gap: .65rem 1.1rem;
   list-style: none;
+  padding: 0;
   margin: 0;
+}
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: .95rem;
+  font-weight: 700;
+  letter-spacing: .015em;
+  padding: .35rem 0;
+  border-bottom: 2px solid transparent;
+}
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--gold);
+  border-bottom-color: var(--accent);
+}
+.hero-banner {
+  background: #000;
+  text-align: center;
   padding: 0;
 }
-
-.nav-menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.02em;
-}
-
-.nav-menu a:hover,
-.nav-menu a.active { color: var(--accent); }
-
-.site-header {
-  background: #000000;
-  text-align: center;
-}
-
-.logo-img {
+.hero-banner img {
   width: 100%;
   max-width: 1200px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
-
 .hero {
-  background: linear-gradient(135deg, #111820 0%, #263747 58%, #111820 100%);
-  color: white;
+  background:
+    linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.68)),
+    url('evolve-logo-banner.png') center/cover no-repeat;
+  color: #fff;
   text-align: center;
-  padding: 5.5rem 1.75rem;
+  padding: 5.25rem 1.5rem;
+  border-bottom: 4px solid var(--accent);
 }
-
+.hero .hero-mark,
+.page-title .hero-mark {
+  width: 180px;
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.2rem;
+}
 .hero h1 {
-  font-size: clamp(2.2rem, 5vw, 4.2rem);
-  margin: 0 0 1rem;
+  color: #fff;
+  font-size: clamp(2.2rem, 5vw, 4.6rem);
   line-height: 1.05;
+  margin: .2rem 0 .65rem;
 }
-
 .hero .tagline {
+  color: var(--gold);
   font-size: 1.35rem;
-  font-weight: 700;
-  color: #ffe8e4;
-  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
 }
-
 .hero p {
-  max-width: 820px;
-  margin: 0 auto 1.5rem;
-  font-size: 1.12rem;
+  max-width: 850px;
+  margin: 1rem auto 0;
+  font-size: 1.15rem;
 }
-
 .container {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 4rem 1.75rem;
+  padding: 4rem 1.5rem;
 }
-
-.narrow {
-  max-width: 850px;
-}
-
-.intro,
+.narrow { max-width: 860px; }
 .center { text-align: center; }
-
 .eyebrow {
   color: var(--accent);
-  font-weight: 800;
+  font-weight: 900;
+  letter-spacing: .12em;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.82rem;
-  margin-bottom: 0.6rem;
+  font-size: .82rem;
+  margin-bottom: .7rem;
 }
-
 h1, h2, h3 { color: var(--primary); }
-
 h2 {
   display: inline-block;
-  font-size: 2.15rem;
+  font-size: clamp(1.85rem, 3vw, 2.25rem);
   line-height: 1.2;
   border-bottom: 3px solid var(--accent);
-  padding-bottom: 0.35rem;
-  margin: 0 0 1.5rem;
+  padding-bottom: .35rem;
+  margin: 0 0 1.4rem;
 }
-
-h3 {
-  font-size: 1.35rem;
-  line-height: 1.25;
-  margin-top: 0;
-}
-
+h3 { font-size: 1.35rem; margin: 0 0 .65rem; }
 .page-title {
-  background: var(--light);
-  border-bottom: 1px solid var(--border);
+  background:
+    linear-gradient(rgba(255,255,255,.92), rgba(255,255,255,.94)),
+    url('evolve-logo-banner.png') center/cover no-repeat;
   text-align: center;
-  padding: 4.5rem 1.5rem 3.75rem;
+  padding: 4.75rem 1.5rem 4rem;
+  border-bottom: 1px solid var(--border);
 }
-
 .page-title h1 {
-  font-size: clamp(2.1rem, 4vw, 3.5rem);
-  margin: 0 0 0.75rem;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  margin: 0 0 .75rem;
 }
-
 .page-title p {
-  max-width: 800px;
-  margin: 0 auto;
   color: var(--muted);
+  max-width: 790px;
+  margin: 0 auto;
   font-size: 1.1rem;
 }
-
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 1.6rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
-
-.grid.two { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
-
+.grid.two { grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); }
 .card {
   background: var(--light);
-  padding: 2rem;
-  border-radius: 10px;
+  border-radius: 12px;
   border-top: 4px solid var(--accent);
   box-shadow: var(--shadow);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
 }
-
-.card.white { background: #ffffff; border: 1px solid var(--border); border-top: 4px solid var(--accent); }
-
-.card ul { padding-left: 1.25rem; }
-
-.cta-btn,
-.button {
-  display: inline-block;
-  background: var(--accent);
-  color: white;
-  padding: 0.95rem 1.45rem;
-  text-decoration: none;
-  border-radius: 7px;
-  font-weight: 800;
-  margin-top: 1rem;
-  transition: transform 0.18s ease, background 0.18s ease;
+.card.logo-card::after {
+  content: '';
+  position: absolute;
+  right: -35px;
+  bottom: -35px;
+  width: 135px;
+  height: 135px;
+  background: url('Evolve-logo-small.jpg') center/contain no-repeat;
+  opacity: .08;
 }
-
-.cta-btn:hover,
-.button:hover {
-  background: var(--accent-dark);
-  color: white;
-  transform: translateY(-2px);
-}
-
-.button.secondary {
-  background: var(--primary);
-}
-
-.button.secondary:hover { background: #1f2d3a; }
-
+.card.white { background: #fff; border: 1px solid var(--border); border-top: 4px solid var(--accent); }
 .band {
-  background: var(--soft);
-  border-top: 1px solid #f0d9d5;
-  border-bottom: 1px solid #f0d9d5;
+  background: var(--rose);
+  border-top: 1px solid #f1dcd8;
+  border-bottom: 1px solid #f1dcd8;
 }
-
 .split {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, .95fr);
   gap: 2rem;
   align-items: center;
 }
-
 .callout {
-  background: var(--primary);
-  color: white;
+  color: #fff;
+  background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+  border-radius: 12px;
   padding: 2rem;
-  border-radius: 10px;
+  box-shadow: var(--shadow);
 }
-
-.callout h2,
-.callout h3 { color: white; border-color: var(--accent); }
-
-.list-check {
-  list-style: none;
-  padding-left: 0;
+.callout h2, .callout h3 { color: #fff; }
+.logo-strip {
+  text-align: center;
+  padding: 2.2rem 1.5rem;
+  background: #000;
 }
-
-.list-check li {
-  margin: 0.55rem 0;
-  padding-left: 1.7rem;
-  position: relative;
+.logo-strip img {
+  width: min(680px, 92%);
+  height: auto;
 }
-
-.list-check li:before {
-  content: '✓';
-  color: var(--accent);
+.button, .cta-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: .9rem 1.35rem;
+  border-radius: 8px;
+  text-decoration: none;
   font-weight: 900;
-  position: absolute;
-  left: 0;
+  margin-top: 1rem;
+  transition: transform .18s ease, background .18s ease;
 }
-
+.button:hover, .cta-btn:hover { background: var(--accent-dark); color: #fff; transform: translateY(-2px); }
+.button.secondary { background: var(--primary); }
+.button.secondary:hover { background: #1f2d3a; }
+.list-check { list-style: none; padding-left: 0; }
+.list-check li { margin: .55rem 0; padding-left: 1.65rem; position: relative; }
+.list-check li::before { content: '✓'; color: var(--accent); font-weight: 900; position: absolute; left: 0; }
 .notice {
-  background: #fffdf2;
-  border: 1px solid #efe3a7;
-  border-left: 5px solid #d6ad2f;
-  padding: 1.25rem 1.5rem;
-  border-radius: 8px;
   margin: 1.5rem 0;
-}
-
-.faq details {
-  background: #ffffff;
-  border: 1px solid var(--border);
-  padding: 1rem 1.2rem;
+  padding: 1.25rem 1.5rem;
+  background: #fffdf2;
+  border-left: 5px solid #d6ad2f;
   border-radius: 8px;
-  margin-bottom: 0.8rem;
+  border-top: 1px solid #efe3a7;
+  border-right: 1px solid #efe3a7;
+  border-bottom: 1px solid #efe3a7;
 }
-
-.faq summary {
-  cursor: pointer;
-  font-weight: 800;
-  color: var(--primary);
+.faq details {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin: .75rem 0;
 }
-
+.faq summary { cursor: pointer; color: var(--primary); font-weight: 900; }
 .footer {
   background: var(--footer);
   color: #b3b3b3;
   padding: 3.5rem 1.5rem 2rem;
 }
-
 .footer-content {
   max-width: 1120px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
   gap: 2rem;
 }
-
-.footer h3 { color: white; }
-
-.footer a { color: var(--accent); text-decoration: none; }
-
-.footer a:hover { color: white; }
-
+.footer h3 { color: #fff; }
+.footer a { color: var(--gold); text-decoration: none; }
+.footer a:hover { color: #fff; }
+.footer-logo { width: min(260px, 100%); height: auto; display: block; margin-bottom: 1rem; }
 .copyright {
   max-width: 1120px;
   margin: 2rem auto 0;
   padding-top: 1.5rem;
   border-top: 1px solid #2c3e50;
   text-align: center;
-  color: #888888;
+  color: #888;
 }
-
-@media (max-width: 760px) {
-  .nav-container { align-items: flex-start; flex-direction: column; }
-  .nav-menu { justify-content: flex-start; gap: 0.8rem 1rem; }
-  .hero { padding: 4rem 1.25rem; }
-  .container { padding: 3rem 1.25rem; }
+@media (max-width: 840px) {
+  .nav-container { flex-direction: column; align-items: flex-start; }
+  .nav-menu { justify-content: flex-start; }
+  .brand-link { min-width: 0; }
+  .brand-text { display: none; }
   .split { grid-template-columns: 1fr; }
+  .footer-content { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .nav-logo { height: 40px; }
+  .hero { padding: 4rem 1rem; }
+  .container { padding: 3rem 1.1rem; }
   .grid.two { grid-template-columns: 1fr; }
+  .card { padding: 1.5rem; }
 }
