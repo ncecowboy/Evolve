@@ -1,6 +1,19 @@
-# Evolve Website Address Update
+# Evolve Website SEO Optimization Package
 
-This package updates the public website pages to separate the confirmed studio location from the mailing address.
+This package updates the public Evolve Dance and Fitness website files for cleaner page targeting, reduced duplicate content, local SEO, and social sharing.
+
+## Key updates included
+- Added canonical URLs to all HTML pages.
+- Added Open Graph and Twitter sharing metadata to all HTML pages.
+- Added JSON-LD DanceSchool structured data with studio address, service area, logo, image, and social profile links.
+- Added Facebook and Instagram links in the footer and Contact page.
+- Reduced duplicate schedule content by keeping the full schedule on schedule.html only.
+- Reduced duplicate price content by keeping detailed pricing primarily on tuition.html.
+- Rebuilt programs.html around program categories instead of repeating the schedule.
+- Rebuilt registration.html around enrollment steps instead of repeating schedule and tuition information.
+- Expanded about.html with story, family commitment, safety, age-appropriate programming, and community focus content.
+- Added local SEO wording for Molalla, Oregon City, Canby, Mulino, Beavercreek, and South Clackamas County.
+- Cleaned style.css syntax and preserved the muted dusty rose, black, and silver brand direction.
 
 ## Studio Location
 111 Robbins St.
@@ -10,21 +23,17 @@ Molalla, OR 97038
 19259 Clairmont Way
 Oregon City, OR 97045
 
-## Included files
-- index.html
-- programs.html
-- tuition.html
-- registration.html
-- schedule.html
-- parents.html
-- about.html
-- contact.html
-- 404.html
-- style.css
+## Expected existing assets in website root
+- evolve-logo-banner.png
+- evolve_logo.png
+- 2026-2027_Schedule.png
+- 2026-2027_Schedule.pdf
+- favicon.ico
 
-## Notes
-- Wording avoids "now open," "visit us today," or posted visitor hours.
-- Contact page includes a location note that the lease is signed and opening preparations are continuing.
-- The footer now includes both the studio location and mailing address.
-- CSS has been refreshed to align with the muted dusty rose brand standard (#CFA8B2) with black and metallic silver accents.
-- Existing image references are preserved: evolve_logo.png and evolve-logo-banner.png. Keep those image files in the same website directory when uploading.
+## Expected existing documents
+- documents/Parent-Handbook.pdf
+- documents/Privacy-Notice.pdf
+
+## Social links added
+- Facebook: https://www.facebook.com/profile.php?id=61593466676435
+- Instagram: https://www.instagram.com/evolve_dance_molalla/
