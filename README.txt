@@ -23,18 +23,16 @@ Molalla, OR 97038
 19259 Clairmont Way
 Oregon City, OR 97045
 
-## Expected existing assets in images/
-- images/evolve-logo-banner.png
-- images/evolve_logo.png
-- images/favicon.ico
+## Expected existing assets in website root
+- evolve-logo-banner.png
+- evolve_logo.png
+- 2026-2027_Schedule.png
+- 2026-2027_Schedule.pdf
+- favicon.ico
 
-## Expected existing documents in documents/
-- documents/2026-2027_Schedule.pdf
+## Expected existing documents
 - documents/Parent-Handbook.pdf
 - documents/Privacy-Notice.pdf
-- documents/Payment-Policy.pdf
-- documents/Enrollment-Agreement.pdf
-- documents/Medical-Release.pdf
 
 ## Social links added
 - Facebook: https://www.facebook.com/profile.php?id=61593466676435
