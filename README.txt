@@ -35,7 +35,7 @@ Oregon City, OR 97045
 - documents/Privacy-Notice.pdf
 
 ## Social links added
-- Facebook: https://www.facebook.com/profile.php?id=61593466676435
+- Facebook: https://www.facebook.com/evolvedanceandfitnessmolalla
 - Instagram: https://www.instagram.com/evolve_dance_molalla/
 
 ## Woodburn and analytics update
@@ -44,3 +44,10 @@ Oregon City, OR 97045
 - Updated the homepage title and description to strengthen dance studio and regional search targeting.
 - Added a natural service-area statement to the Contact page.
 - Preserved Google Analytics 4 Measurement ID G-V9MZHZDTXV on every HTML page.
+
+
+## August 24, 2026 update
+- Added family FAQs, trial and placement guidance, Why Choose Evolve, embedded map, and expanded local service-area wording.
+- Preserved GA4. Deferred studio photos and mobile-app information.
+
+- Revised the homepage hero and service-area section to display Molalla, Woodburn, Canby, Oregon City, Beavercreek, Mulino, Estacada, Scotts Mills, and Silverton prominently.
