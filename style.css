@@ -49,7 +49,11 @@ h3 { font-size: 1.35rem; margin: 0 0 .65rem; }
 .page-title p { color: var(--muted); max-width: 790px; margin: 0 auto; font-size: 1.1rem; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(265px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
 .grid.two { grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); }
+.grid.partners { grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); max-width: 1000px; margin-left: auto; margin-right: auto; }
 .card { background: var(--light); border-radius: 12px; border-top: 4px solid var(--accent); box-shadow: var(--shadow); padding: 2rem; position: relative; overflow: hidden; }
+.partner-logo-wrap { display: flex; align-items: center; justify-content: center; height: 90px; margin: 0 auto 1.25rem; }
+.partner-logo { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.partner-logo-dark { background: #171717; border-radius: 8px; padding: .75rem; width: 100%; }
 .band { background: var(--rose); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .button, .cta-btn { display: inline-block; background: var(--accent-dark); color: #fff; padding: .9rem 1.35rem; border-radius: 8px; text-decoration: none; font-weight: 900; margin-top: 1rem; transition: transform .18s ease, background .18s ease; }
 .button:hover, .cta-btn:hover { background: #000; color: #fff; transform: translateY(-2px); }
