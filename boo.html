@@ -28,10 +28,17 @@
     .boo-pill { display: inline-block; background: #f0447f; color: #fff; padding: .4rem 1.1rem; border-radius: 999px; font-weight: 700; margin-top: 1rem; }
     .boo-steps { counter-reset: step; }
     .boo-steps .card { position: relative; padding-top: 2.5rem; }
-    .boo-steps .card::before { counter-increment: step; content: counter(step); position: absolute; top: -1rem; left: 1rem; width: 2.2rem; height: 2.2rem; border-radius: 50%; background: #f0447f; color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .boo-steps .card::before { counter-increment: step; content: counter(step); position: absolute; top: .75rem; left: 1rem; width: 2.2rem; height: 2.2rem; border-radius: 50%; background: #f0447f; color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; }
     .boo-classes { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; list-style: none; padding: 0; margin: 1.5rem 0 0; }
     .boo-classes li { background: #fde3ee; border: 2px solid #f0447f; border-radius: 14px; padding: .6rem 1.2rem; font-weight: 700; }
     .fine-print { font-size: .9rem; opacity: .85; }
+    .boo-hero .cta-btn { background: #f0447f; }
+    .boo-hero .cta-btn:hover { background: #fff; color: #0d0d0d; }
+    .boo-hero .button.secondary { background: transparent; border: 2px solid #fff; }
+    .boo-hero .button.secondary:hover { background: #fff; color: #0d0d0d; }
+    @media (max-width: 800px) {
+      .boo-hero::before, .boo-hero::after { display: none; }
+    }
   </style>
 
   <!-- Google tag (gtag.js) -->
