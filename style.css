@@ -23,7 +23,7 @@ a:hover { color: var(--primary); }
 .brand-link:visited, .brand-link:hover, .brand-link:focus { color: #fff; text-decoration: none; }
 .nav-logo { height: 46px; width: auto; display: block; }
 .brand-text { white-space: nowrap; }
-.nav-menu { display: flex; justify-content: flex-end; align-items: center; flex-wrap: nowrap; gap: .65rem .9rem; list-style: none; padding: 0; margin: 0; flex: 1; min-width: 0; }
+.nav-menu { display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: .4rem .9rem; list-style: none; padding: 0; margin: 0; flex: 1; min-width: 0; }
 .nav-menu li { white-space: nowrap; }
 .nav-menu a { color: #fff; text-decoration: none; font-size: .95rem; font-weight: 700; letter-spacing: .015em; padding: .35rem 0; border-bottom: 2px solid transparent; }
 .nav-menu a:hover, .nav-menu a.active { color: var(--accent); border-bottom-color: var(--accent); }
