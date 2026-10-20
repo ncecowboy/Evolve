@@ -1,1 +1,0 @@
-Upload all files to the root of the GitHub Pages repository. Expected assets in root: evolve-logo-banner.png and evolve_logo.png. Expected PDFs: documents/Parent-Handbook.pdf and documents/Privacy-Notice.pdf.

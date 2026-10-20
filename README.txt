@@ -1,1 +1,0 @@
-Upload pajama-dance-party.html and place the uploaded flyer image at images/pajama_dance_party_flyer_2026.PNG
