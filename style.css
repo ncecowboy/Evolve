@@ -47,6 +47,16 @@ h3 { font-size: 1.35rem; margin: 0 0 .65rem; }
 .page-title .hero-mark { width: 180px; max-width: 70%; height: auto; display: block; margin: 0 auto 1.2rem; }
 .page-title h1 { font-size: clamp(2.2rem, 4vw, 3.6rem); margin: 0 0 .75rem; }
 .page-title p { color: var(--muted); max-width: 790px; margin: 0 auto; font-size: 1.1rem; }
+.evolution-team-hero { background: linear-gradient(135deg, #fff 20%, var(--rose)); border-bottom: 1px solid var(--border); }
+.evolution-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 340px); align-items: center; gap: clamp(2rem, 6vw, 5rem); }
+.evolution-feature-copy { max-width: 650px; }
+.evolution-feature-copy h1 { font-size: clamp(2.2rem, 4vw, 3.6rem); line-height: 1.1; margin: 0 0 .75rem; }
+.evolution-feature-copy .eyebrow, .evolution-team-intro { color: #80505F; }
+.evolution-team-intro { font-size: 1.15rem; font-weight: 800; }
+.evolution-feature .action-row { justify-content: flex-start; }
+.evolution-feature .cta-btn { background: #80505F; }
+.evolution-feature .cta-btn:hover { background: #000; }
+.evolution-feature-art { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 12px 32px rgba(35, 10, 20, .2); }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(265px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
 .grid.two { grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); }
 .grid.partners { grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); max-width: 1000px; margin-left: auto; margin-right: auto; }
@@ -129,6 +139,8 @@ address { font-style: normal; line-height: 1.65; }
   .action-row { flex-direction: column; align-items: stretch; }
   .action-row .button, .action-row .cta-btn { text-align: center; }
   .schedule-flyer { border-radius: 8px; }
+  .evolution-feature { grid-template-columns: 1fr; gap: 2rem; }
+  .evolution-feature-art { width: min(100%, 340px); margin: 0 auto; }
 }
 @media (max-width: 560px) {
   .nav-logo { height: 40px; }
